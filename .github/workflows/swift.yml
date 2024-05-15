@@ -19,7 +19,9 @@ jobs:
     - name: Resolve
       run: swift package resolve
     - name: Check if changes
-      run: git diff --exit-code || exit 1
+      run: |
+        git --no-pager diff
+        git diff --exit-code || exit 1
     - name: Build
       run: swift build -v
     - name: Run tests
