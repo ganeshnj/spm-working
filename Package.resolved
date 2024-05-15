@@ -1,5 +1,4 @@
 {
-  "originHash" : "4d4bdc5ca6b4db14bb34c76506c13773942fa39cb7a68a26cbfeeddafc364cc2",
   "pins" : [
     {
       "identity" : "dd-sdk-ios",
@@ -20,6 +19,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
-
