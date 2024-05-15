@@ -16,6 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Resolve
+      run: swift package resolve
+    - name: Check if changes
+      run: git diff --exit-code
     - name: Build
       run: swift build -v
     - name: Run tests
