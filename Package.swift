@@ -12,7 +12,7 @@ let package = Package(
             targets: ["SPMWorking"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", .upToNextMajor(from: "2.0.0"))
+        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", branch: "develop")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
